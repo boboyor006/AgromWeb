@@ -4,6 +4,7 @@ import headerImg from "../img/headerImg.svg"
 import headerImg2 from "../img/header2.svg"
 import { Truck, Headphones, Heart, Lock } from 'lucide-react';
 import Product from "./Product"
+import CategoryCard from "./CategoryCard";
 
 
 
@@ -92,11 +93,12 @@ const Header = () => {
               <span>Need help? Call Us: +998 93 375 05 15</span>
             </div>
           </div>
+    
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8 h-[100px]">
+      <section className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:h-[50px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Chap kartochka */}
           <div className="bg-gradient-to-br from-gray-200 to-gray-300 h-[550px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 animate-float">
@@ -117,14 +119,14 @@ const Header = () => {
                 Shop Now <i className="fas fa-arrow-right"></i>
               </button>
             </div>
-            <div className="flex justify-center lg:justify-end lg:-mt-45 ml-21 pb-5 lg:pb-0">
+            <div className="flex justify-center hidden lg:block lg:justify-end lg:h-[10px] lg:-mt-45 ml-105 pb-5 lg:pb-0">
               <img
                 src={headerImg}
                 alt="Happy woman with groceries"
                 className="w-68 h-80 object-cover rounded-lg animate-fade-in"
                 style={{ animationDelay: "1.4s" }}
               />
-            </div>
+            </div>   
           </div>
 
           {/* O'ng kartochka */}
@@ -191,7 +193,13 @@ const Header = () => {
       </div>
     </section>
 
+
+
+
+    {/* Product ulangan bu yerda lekin keyin ketilaveradi  */}
     <Product/>
+
+    <CategoryCard/>
       </section>
 
      
