@@ -40,29 +40,24 @@ const products = [
 
 export default function DealOfTheMonth() {
   return (
-    <div className="min-h-screen  py-12 px-4 ">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen  py-4  px-4 ">
+      <div className="max-w-7.5xl  mx-auto">
     
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
          
 
 
 
-        <div className="lg:col-span-1">
-      <div className="relative rounded-xl h-120 overflow-hidden shadow-2xl min-h-96 flex flex-col justify-between p-10 text-white">
-    
-    {/* Orqa fon rasmi */}
-    <div className="absolute inset-0 -z-10">
-      <img
-        src={BgImg}
-        alt="Fresh vegetables background"
-        className="w-full h-full object-cover"
-      />
-      {/* Qorong'i qoplama — matn o'qilishi uchun */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-    </div>
+        <div className="lg:col-span-1 ">
+  <div
+    className="relative rounded-xl min-h-96 h-170 overflow-hidden shadow-2xl flex flex-col justify-between p-10 text-white
+    bg-center bg-cover "
+    style={{ backgroundImage: `url(${BgImg})` }}
+  >
+    {/* Qorong'i qoplama */}
+    <div className="absolute inset-0 bg-black/50"></div>
 
-    {/* Matn qismi */}
+    {/* Matn */}
     <div className="relative z-10">
       <p className="text-sm font-medium text-yellow-400 mb-2">
         Hot This Month
@@ -73,16 +68,20 @@ export default function DealOfTheMonth() {
       </h2>
     </div>
 
-    {/* Pastki rasm (agar kerak bo'lmasa, olib tashlang) */}
-    <div className="relative h-64 -mx-10 -mb-10">
+    {/* Pastki rasm — Agar kerak bo‘lmasa, o‘zim o‘chirib tashlayman */}
+    {/* <div className="relative z-10 h-64 -mx-10 -mb-10">
       <img
         src={BgImg}
         alt="Fresh vegetables"
         className="object-cover w-full h-full rounded-xl"
       />
-    </div>
+    </div> */}
   </div>
 </div>
+
+
+
+
 
           {/* Right Section - Deals */}
           <div className="lg:col-span-2">

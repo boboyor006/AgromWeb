@@ -8,6 +8,7 @@ import CategoryCard from "./CategoryCard";
 
 
 
+
 const Header = () => {
   const features = [
     {
@@ -198,8 +199,10 @@ const Header = () => {
 
     {/* Product ulangan bu yerda lekin keyin ketilaveradi  */}
     <Product/>
+    < CategoryCard/> 
+   
 
-    <CategoryCard/>
+
       </section>
 
      
