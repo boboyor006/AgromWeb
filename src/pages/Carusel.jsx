@@ -41,32 +41,26 @@ export default function ProductCarousel() {
 
   useEffect(() => {
     if (!autoPlay) return
-
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % (products.length - itemsPerView + 1))
     }, 4000)
-
     return () => clearInterval(interval)
   }, [autoPlay, itemsPerView])
 
+  // Drag Functions
   const handleMouseDown = (e) => {
     setIsDragging(true)
     setDragStart(e.clientX)
     setAutoPlay(false)
   }
-
   const handleMouseUp = (e) => {
     if (!isDragging) return
     setIsDragging(false)
-
     const dragDistance = dragStart - e.clientX
     const threshold = 50
-
-    if (dragDistance > threshold) {
-      setCurrentIndex((prev) => (prev + 1) % (products.length - itemsPerView + 1))
-    } else if (dragDistance < -threshold) {
+    if (dragDistance > threshold) setCurrentIndex((prev) => (prev + 1) % (products.length - itemsPerView + 1))
+    else if (dragDistance < -threshold)
       setCurrentIndex((prev) => (prev - 1 + (products.length - itemsPerView + 1)) % (products.length - itemsPerView + 1))
-    }
 
     setTimeout(() => setAutoPlay(true), 5000)
   }
@@ -76,29 +70,25 @@ export default function ProductCarousel() {
     setDragStart(e.touches[0].clientX)
     setAutoPlay(false)
   }
-
   const handleTouchEnd = (e) => {
     if (!isDragging) return
     setIsDragging(false)
-
     const dragDistance = dragStart - e.changedTouches[0].clientX
     const threshold = 50
 
-    if (dragDistance > threshold) {
-      setCurrentIndex((prev) => (prev + 1) % (products.length - itemsPerView + 1))
-    } else if (dragDistance < -threshold) {
+    if (dragDistance > threshold) setCurrentIndex((prev) => (prev + 1) % (products.length - itemsPerView + 1))
+    else if (dragDistance < -threshold)
       setCurrentIndex((prev) => (prev - 1 + (products.length - itemsPerView + 1)) % (products.length - itemsPerView + 1))
-    }
 
     setTimeout(() => setAutoPlay(true), 5000)
   }
 
+  // Navigation
   const handleNext = () => {
     setAutoPlay(false)
     setCurrentIndex((prev) => (prev + 1) % (products.length - itemsPerView + 1))
     setTimeout(() => setAutoPlay(true), 5000)
   }
-
   const handlePrev = () => {
     setAutoPlay(false)
     setCurrentIndex((prev) => (prev - 1 + (products.length - itemsPerView + 1)) % (products.length - itemsPerView + 1))
@@ -108,28 +98,25 @@ export default function ProductCarousel() {
   const visibleProducts = products.slice(currentIndex, currentIndex + itemsPerView)
 
   return (
-    <main className="min-h-screen bg-white p-6 md:p-8 lg:p-12">
+    <main className=" bg-rgb(247, 249, 250)  py-10 px-4">
       
-      {/* ANIMATIONS */}
-      <style>{`
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .product-card { animation: fadeInUp 0.6s ease-out; }
-      `}</style>
-
-      <div className="max-w-7xl mx-auto mb-12">
-        <div className="flex items-center justify-between mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Most Selling Products</h1>
-          <a href="#" className="text-gray-700 font-medium hover:text-green-600 transition">See All Deals →</a>
-        </div>
-      </div>
-
+      {/* PAGE MAX WIDTH — MARKAZGA TUSHIRILGAN */}
       <div className="max-w-7xl mx-auto">
+
+        {/* TITLE */}
+        <div className="flex items-center justify-between mb-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+            Most Selling Products
+          </h1>
+          <a href="#" className="text-gray-700 font-medium hover:text-green-600 transition">
+            See All Deals →
+          </a>
+        </div>
+
+        {/* CAROUSEL */}
         <div className="relative">
 
-          {/* PRODUCT GRID */}
+          {/* PRODUCTS GRID — MARKAZGA TUSHDI */}
           <div
             ref={carouselRef}
             onMouseDown={handleMouseDown}
@@ -137,7 +124,7 @@ export default function ProductCarousel() {
             onMouseLeave={handleMouseUp}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-10"
           >
             {visibleProducts.map((product) => (
               <div key={product.id} className="product-card bg-white p-6 rounded-2xl shadow-sm border text-center">
@@ -163,7 +150,7 @@ export default function ProductCarousel() {
             ))}
           </div>
 
-          {/* CAROUSEL NAVIGATION */}
+          {/* NAVIGATION BUTTONS */}
           <div className="flex items-center justify-between">
             <button onClick={handlePrev} className="w-12 h-12 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center">
               <ChevronLeft size={24} />

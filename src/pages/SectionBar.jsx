@@ -41,7 +41,7 @@ export default function Home() {
   const current = groceryOffers[currentIndex];
 
   return (
-    <div className=" bg-white   w-[full] h-130 flex items-center justify-center p-6">
+    <div className="   w-[full] h-130 flex items-center justify-center p-6">
 
       <div className="w-[1600px]  max-w-8xl rounded-lg bg-gradient-to-r from-green-700 to-green-600 overflow-hidden shadow-2xl">
         <div className="flex flex-col md:flex-row items-center justify-between p-8 md:p-12 gap-8 min-h-80">

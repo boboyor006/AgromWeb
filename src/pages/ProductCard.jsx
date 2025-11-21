@@ -57,7 +57,7 @@ const EditorsPick = () => {
   };
 
   return (
-    <div className="bg-white py-12 px-6">
+    <div className=" py-12 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Sarlavha */}
         <h2 className="text-4xl font-extrabold text-gray-900 mb-10">
@@ -102,7 +102,8 @@ const EditorsPick = () => {
           <div className="lg:col-span-4">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-full min-h-96">
               {/* Banner rasmi (placeholder) */}
-                     <div className="lg:col-span-1 ">
+
+                <div className="lg:col-span-1 ">
                <div
                  className="relative rounded-xl min-h-96 h-170 overflow-hidden shadow-2xl flex flex-col justify-between p-10 text-white
                  bg-center bg-cover "

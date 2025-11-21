@@ -1,11 +1,10 @@
 import React from "react";
 import { ChevronRight, Star } from "lucide-react";
-import Image1 from "../img/Product/1.svg"
-import Image2 from "../img/Product/2.svg"
-import Image3 from "../img/Product/3.svg"
-import Image4 from "../img/Product/4.svg"
-import BgImg from "../img/Product/bg.svg"
-
+import Image1 from "../img/Product/1.svg";
+import Image2 from "../img/Product/2.svg";
+import Image3 from "../img/Product/3.svg";
+import Image4 from "../img/Product/4.svg";
+import BgImg from "../img/Product/bg.svg";
 
 const products = [
   {
@@ -40,59 +39,43 @@ const products = [
 
 export default function DealOfTheMonth() {
   return (
-    <div className="min-h-screen  py-4  px-4 ">
-      <div className="max-w-7.5xl  mx-auto">
-    
+    <div className="w-full py-10 px-4">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-         
 
+          {/* LEFT BIG CARD */}
+          <div className="lg:col-span-1">
+            <div
+              className="relative rounded-xl h-[700px] overflow-hidden shadow-xl flex flex-col justify-between p-10 text-white bg-center bg-cover"
+              style={{ backgroundImage: `url(${BgImg})` }}
+            >
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50"></div>
 
+              {/* Text */}
+              <div className="relative z-10">
+                <p className="text-sm font-medium text-yellow-400 mb-2">
+                  Hot This Month
+                </p>
+                <h2 className="text-3xl font-bold leading-tight">
+                  Save an extra{" "}
+                  <span className="text-yellow-400 text-4xl">$15 per order</span>
+                </h2>
+              </div>
+            </div>
+          </div>
 
-        <div className="lg:col-span-1 ">
-  <div
-    className="relative rounded-xl min-h-96 h-170 overflow-hidden shadow-2xl flex flex-col justify-between p-10 text-white
-    bg-center bg-cover "
-    style={{ backgroundImage: `url(${BgImg})` }}
-  >
-    {/* Qorong'i qoplama */}
-    <div className="absolute inset-0 bg-black/50"></div>
-
-    {/* Matn */}
-    <div className="relative z-10">
-      <p className="text-sm font-medium text-yellow-400 mb-2">
-        Hot This Month
-      </p>
-      <h2 className="text-3xl font-bold leading-tight">
-        Save an extra{" "}
-        <span className="text-yellow-400 text-4xl">$15 per order</span>
-      </h2>
-    </div>
-
-    {/* Pastki rasm — Agar kerak bo‘lmasa, o‘zim o‘chirib tashlayman */}
-    {/* <div className="relative z-10 h-64 -mx-10 -mb-10">
-      <img
-        src={BgImg}
-        alt="Fresh vegetables"
-        className="object-cover w-full h-full rounded-xl"
-      />
-    </div> */}
-  </div>
-</div>
-
-
-
-
-
-          {/* Right Section - Deals */}
+          {/* RIGHT SIDE - DEAL LIST */}
           <div className="lg:col-span-2">
             {/* Header */}
             <div className="flex justify-between items-center mb-8">
-              <h1 className="text-3xl md:text-3xl font-bold text-slate-900">
+              <h1 className="text-3xl font-bold text-slate-900">
                 Deal Of The Month
               </h1>
+
               <a
                 href="#"
-                className="flex items-center gap-2 text-slate-700 hover:text-slate-900 font-medium transition-colors"
+                className="flex items-center gap-2 text-slate-700 hover:text-slate-900 font-medium transition"
               >
                 See All Deals
                 <ChevronRight className="w-5 h-5" />
@@ -100,16 +83,16 @@ export default function DealOfTheMonth() {
             </div>
 
             {/* Product Grid */}
-            <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
               {products.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-white rounded-lg border border-slate-100 overflow-hidden transition-all duration-300 ease-out hover:shadow-2xl hover:scale-105 hover:border-slate-300 cursor-pointer"
+                  className="bg-white rounded-xl border border-slate-200 overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.03] cursor-pointer"
                 >
                   {/* Product Image */}
                   <div className="relative h-48 bg-slate-100 overflow-hidden">
                     <img
-                      src={product.image || "/placeholder.svg"}
+                      src={product.image}
                       alt={product.name}
                       className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
                     />
@@ -139,6 +122,7 @@ export default function DealOfTheMonth() {
                 </div>
               ))}
             </div>
+
           </div>
         </div>
       </div>
