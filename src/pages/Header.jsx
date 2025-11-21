@@ -9,6 +9,8 @@ import ProductCard from "./ProductCard";
 import SectionBar from "./SectionBar";
 
 import Carousel from "./Carusel.jsx";
+import Acardion from "./Acardion.jsx";
+import Footer from "./Footer.jsx";
 
 
 
@@ -207,6 +209,8 @@ const Header = () => {
       <ProductCard/>
       <SectionBar/>
       <Carousel/>
+      <Acardion/>
+      <Footer/>
         
 
       </section>
