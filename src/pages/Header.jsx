@@ -5,7 +5,10 @@ import headerImg2 from "../img/header2.svg"
 import { Truck, Headphones, Heart, Lock } from 'lucide-react';
 import Product from "./Product"
 import CategoryCard from "./CategoryCard";
+import ProductCard from "./ProductCard";
+import SectionBar from "./SectionBar";
 
+import Carousel from "./Carusel.jsx";
 
 
 
@@ -198,10 +201,13 @@ const Header = () => {
 
 
     {/* Product ulangan bu yerda lekin keyin ketilaveradi  */}
-    <Product/>
-    < CategoryCard/> 
-   
 
+       <Product/>
+      < CategoryCard/> 
+      <ProductCard/>
+      <SectionBar/>
+      <Carousel/>
+        
 
       </section>
 
