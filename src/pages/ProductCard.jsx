@@ -1,5 +1,6 @@
 import React from 'react';
 import Images from "../img/Product/4.svg"
+import BgImg from "../img/Product/bg.svg"
 
 const EditorsPick = () => {
     
@@ -101,13 +102,28 @@ const EditorsPick = () => {
           <div className="lg:col-span-4">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-full min-h-96">
               {/* Banner rasmi (placeholder) */}
-              <div className="absolute inset-0 bg-black">
-                <img
-                  src="https://images.unsplash.com/photo-1596047254868-febc7f1d82d2?w=800"
-                  alt="Sweet Tomatoes"
-                  className="w-full h-full object-cover opacity-90"
-                />
-              </div>
+                     <div className="lg:col-span-1 ">
+               <div
+                 className="relative rounded-xl min-h-96 h-170 overflow-hidden shadow-2xl flex flex-col justify-between p-10 text-white
+                 bg-center bg-cover "
+                 style={{ backgroundImage: `url(${BgImg})` }}
+               >
+                 {/* Qorong'i qoplama */}
+                 <div className="absolute inset-0 bg-black/50"></div>
+             
+                 {/* Matn */}
+                
+             
+                 {/* Pastki rasm — Agar kerak bo‘lmasa, o‘zim o‘chirib tashlayman */}
+                 {/* <div className="relative z-10 h-64 -mx-10 -mb-10">
+                   <img
+                     src={BgImg}
+                     alt="Fresh vegetables"
+                     className="object-cover w-full h-full rounded-xl"
+                   />
+                 </div> */}
+               </div>
+             </div>
 
               {/* Overlay matn */}
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
