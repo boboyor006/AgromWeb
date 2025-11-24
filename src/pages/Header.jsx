@@ -15,6 +15,7 @@ import Carousel from "./Carusel.jsx";
 import Acardion from "./Acardion.jsx";
 import Footer from "./Footer.jsx";
 
+
 const Header = () => {
   const features = [
     {
@@ -162,6 +163,9 @@ const Header = () => {
       <Carousel />
       <Acardion />
       <Footer />
+
+
+     
       </section>
 
       {/* COMPONENTLAR PASTDA — HECH QAYSI O‘CHIRILMAGAN */}

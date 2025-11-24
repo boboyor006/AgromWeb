@@ -4,9 +4,12 @@ import images1 from "../img/Product/bg.svg";
 import A1 from "../img/A1.svg";
 
 function Acardion() {
+
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const articles = [
+
+
     {
       id: 1,
       category: "Nutritious Meal",
@@ -31,7 +34,9 @@ function Acardion() {
         "Learn how to make eco-friendly choices at the grocery store. From sustainable sourcing to minimizing waste, we cover it all.",
       image: A1,
     },
+
   ];
+
 
   const faqs = [
     {
@@ -70,6 +75,7 @@ function Acardion() {
       answer:
         "Yes, we offer a 30-day return and exchange policy. Items must be in original condition with all packaging. Contact our support team to initiate the process.",
     },
+    
   ];
 
   const toggleFAQ = (id) => {
