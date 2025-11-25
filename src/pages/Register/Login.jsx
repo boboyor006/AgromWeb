@@ -49,7 +49,7 @@ export default function Login() {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-20xl mx-auto">
+        <div className="lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
           {/* Login Section */}
           <div className="border border-gray-200 w-full  rounded-lg p-8 bg-white shadow-sm">
