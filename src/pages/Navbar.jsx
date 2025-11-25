@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import feather from "feather-icons";
 import "../css/Navbar.css"
+import { Link } from "react-router-dom";
 import AgromLogo from '../img/AgromLogo.svg'
+
+
+
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +18,7 @@ const Navbar = () => {
   return (
     <div className="bg-white  ">
       {/* Reklama qismi */}
+      
       <div className="bg-green-700 text-white text-sm ">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between py-2 gap-2 md:gap-6">
           <div className="flex flex-wrap justify-center items-center gap-4">
@@ -56,11 +62,14 @@ const Navbar = () => {
           {/* Chap taraf (Logo + joylashuv) */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
+              <Link to="/">
               <img
                 src={AgromLogo}
                 alt="Logo"
                 className="w-20 h-20 rounded-full object-contain"
               />
+              </Link>
+            
             </div>
             <div className="hidden md:flex items-center gap-2 cursor-pointer text-gray-700 hover:text-green-700">
               <i data-feather="map-pin"></i>
@@ -93,7 +102,9 @@ const Navbar = () => {
           {/* O‘ng taraf */}
           <div className="hidden md:flex items-center gap-4 text-sm">
             <div className="flex items-center gap-1 cursor-pointer hover:text-green-700">
-              <i data-feather="user"></i> <span>Sign In</span>
+              <i data-feather="user"></i> <span>
+                <Link to="/login">Sin Up</Link>
+              </span>
             </div>
             <div className="flex items-center gap-1 cursor-pointer hover:text-green-700 border-l pl-3">
               <i data-feather="heart"></i> <span>Wishlist</span>

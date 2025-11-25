@@ -1,8 +1,9 @@
-'use client';
-
 import { useState, useEffect } from 'react';
 import '../css/index.css'; 
 import ProductImg from "../img/product.svg"
+
+
+
 
 
 
@@ -23,6 +24,11 @@ const groceryOffers = [
     tag: "Best Prices Guaranteed",
   },
 ];
+
+
+
+
+
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);

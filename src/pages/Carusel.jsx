@@ -1,8 +1,9 @@
-'use client'
-
 import { useState, useEffect, useRef } from 'react'
 import { ChevronLeft, ChevronRight, ShoppingCart } from 'lucide-react'
 import Images from "../img/Product/4.svg"
+
+
+
 
 const products = [
   { id: 1, name: 'Mushrooms', image: Images, rating: 5, price: 15.0 },
@@ -47,7 +48,7 @@ export default function ProductCarousel() {
     return () => clearInterval(interval)
   }, [autoPlay, itemsPerView])
 
-  // Drag Functions
+
   const handleMouseDown = (e) => {
     setIsDragging(true)
     setDragStart(e.clientX)

@@ -140,6 +140,7 @@ const Header = () => {
         </div>
 
         {/* FEATURES */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
           {features.map((f, i) => {
             const Icon = f.icon;
@@ -156,14 +157,13 @@ const Header = () => {
           })}
         </div>
 
-        <Product />
+      <Product />
       <CategoryCard />
       <ProductCard />
       <SectionBar />
       <Carousel />
       <Acardion />
-      <Footer />
-
+   
 
      
       </section>
