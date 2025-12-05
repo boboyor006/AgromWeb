@@ -12,7 +12,7 @@ export default function Login() {
     password: "" 
   });
 
-  // Parol shartlarini tekshirish
+ 
   const hasUpperCase = /[A-Z]/.test(registerData.password);
   const hasNumber = /[0-9]/.test(registerData.password);
   const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(registerData.password);
@@ -35,9 +35,14 @@ export default function Login() {
     // Bu yerda Google OAuth integratsiyasi bo'lishi kerak
   };
 
+  const oldwerWen = () => {
+    alert("code kirtishi mukinmi "); 
+  }
+
+  
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Header */}
+      
       <header className="bg-gray-100 py-6 border-b border-gray-200">
         <div className="container mx-auto px-4">
           <h1 className="text-center text-gray-600 text-xl font-normal flex items-center justify-center gap-2">
@@ -60,6 +65,7 @@ export default function Login() {
 
             <div className="space-y-4">
               {/* Email */}
+
               <div>
                 <label className="block text-gray-700 font-medium mb-2">
                   Email <span className="text-red-500">*</span>
@@ -78,6 +84,8 @@ export default function Login() {
               </div>
 
               {/* Password */}
+
+
               <div>
                 <label className="block text-gray-700 font-medium mb-2">
                   Parol <span className="text-red-500">*</span>
@@ -92,6 +100,8 @@ export default function Login() {
                     className="w-full border border-gray-300 rounded pl-10 pr-12 py-3 focus:outline-none focus:border-green-500"
                     placeholder="parolingiz"
                   />
+
+
                   <button
                     type="button"
                     onClick={() => setShowLoginPassword(!showLoginPassword)}
@@ -118,6 +128,7 @@ export default function Login() {
               </button>
 
               {/* Divider */}
+
               <div className="relative my-6">
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-gray-300"></div>
@@ -128,6 +139,7 @@ export default function Login() {
               </div>
 
               {/* Google Login */}
+
               <button
                 onClick={handleGoogleLogin}
                 className="w-full border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 font-semibold py-3 rounded transition flex items-center justify-center gap-3"
@@ -144,6 +156,7 @@ export default function Login() {
           </div>
 
           {/* Register Section */}
+          
         
         </div>
       </main>

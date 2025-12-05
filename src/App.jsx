@@ -5,6 +5,7 @@ import Navbar from './pages/Navbar'
 import Registrasion from './pages/Register/Register'
 import Logins from "./pages/Register/Login"
 import Footer from "./pages/Footer"
+import About from './pages/About'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         {/* Register sahifasi - faqat Register komponenti */}
         <Route path='/login' element={<Logins />} />
         <Route path='/register' element={<Registrasion />} />
+        <Route path='/about' element={<About/>} />
       </Routes>
       
       <Footer />

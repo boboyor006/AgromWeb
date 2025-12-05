@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-wrap justify-center items-center gap-5">
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-100">
-              <i data-feather="info"></i> <span>About us</span>
+              <i data-feather="info"></i> <Link to="/about"><span>About us</span></Link>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-100">
               <i data-feather="help-circle"></i> <span>Contact us</span>
@@ -161,7 +161,10 @@ const Navbar = () => {
 
             <div className="flex flex-col gap-3 text-gray-700">
               <div className="flex items-center gap-2 cursor-pointer hover:text-green-700">
-                <i data-feather="user"></i> <span>Sign In</span>
+                <i data-feather="user"></i> 
+                <Link to="/login">
+                <span>Sign Ins</span>
+                </Link>
               </div>
               <div className="flex items-center gap-2 cursor-pointer hover:text-green-700">
                 <i data-feather="heart"></i> <span>Wishlist</span>
