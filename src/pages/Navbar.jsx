@@ -35,7 +35,7 @@ const Navbar = () => {
               <i data-feather="info"></i> <Link to="/about"><span>About us</span></Link>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-100">
-              <i data-feather="help-circle"></i> <span>Contact us</span>
+              <i data-feather="help-circle"></i> <span><Link to="/contac">Contact us</Link></span>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-100">
               <i data-feather="calendar"></i> <span>Blog</span>
