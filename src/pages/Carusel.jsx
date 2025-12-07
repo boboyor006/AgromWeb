@@ -105,6 +105,7 @@ export default function ProductCarousel() {
       <div className="max-w-7xl mx-auto">
 
         {/* TITLE */}
+        
         <div className="flex items-center justify-between mb-10">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
             Most Selling Products

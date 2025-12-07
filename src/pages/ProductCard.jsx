@@ -98,10 +98,10 @@ const EditorsPick = () => {
             ))}
           </div>
 
-          {/* O'ngdagi banner – 4 ustun */}
+        
           <div className="lg:col-span-4">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-full min-h-96">
-              {/* Banner rasmi (placeholder) */}
+             
 
                 <div className="lg:col-span-1 ">
                <div

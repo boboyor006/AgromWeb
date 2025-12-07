@@ -84,7 +84,7 @@ function Acardion() {
 
   return (
     <main className=" bg-gradient-to-b from-slate-50 to-rgb(247, 249, 250) flex flex-col items-center">
-      {/* Top Articles */}
+
       <section className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-slate-900 mb-12 sm:mb-16">
           Top Recent Articles
@@ -99,7 +99,7 @@ function Acardion() {
             />
           </div>
 
-          {/* Article Details */}
+      
           <div className="lg:col-span-2 space-y-6">
             <article className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition">
               <span className="inline-block text-sm font-semibold text-slate-600 bg-slate-100 px-3 py-1 rounded-full mb-3">
@@ -111,7 +111,7 @@ function Acardion() {
               <p className="text-slate-600 leading-relaxed">{articles[0].description}</p>
             </article>
 
-            {/* Right Side Articles */}
+       
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
               {articles.slice(1).map((article) => (
                 <article
@@ -138,7 +138,7 @@ function Acardion() {
         </div>
       </section>
 
-      {/* FAQ */}
+
       <section className="w-full max-w-4xl   px-4 sm:px-6 lg:px-8 py-16 bg-rgb(247, 249, 250)">
         <h2 className="text-4xl font-bold text-center text-slate-900 mb-4">
           Frequently Asked Questions

@@ -32,7 +32,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       
-      {/* MAP SECTION */}
+  
       <div className="relative w-full h-80 md:h-96 overflow-hidden shadow-lg">
       <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.5537545635944!2d67.268149!3d37.224392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b58d3b8f646e51%3A0x2aaf1a56c9d24a56!2sTermiz%2C%20Surxondaryo%20Region%2C%20Uzbekistan!5e0!3m2!1sen!2suz!4v1702560000000"
@@ -45,11 +45,11 @@ export default function ContactPage() {
 />
       </div>
 
-      {/* PAGE CONTENT */}
+   
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
-          {/* FORM SECTION */}
+
           <div className="lg:col-span-2">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               Have A Question?
@@ -100,7 +100,7 @@ export default function ContactPage() {
                 bg-white text-slate-900 placeholder-slate-500 resize-none"
               />
 
-              {/* CHECKBOX */}
+
               <div className="flex items-center gap-3">
                 <input
                   type="checkbox"
@@ -114,7 +114,7 @@ export default function ContactPage() {
                 </label>
               </div>
 
-              {/* SUBMIT BUTTON */}
+       
               <button
                 type="submit"
                 className="bg-emerald-600 hover:bg-emerald-700 
@@ -124,7 +124,7 @@ export default function ContactPage() {
                 Submit Now
               </button>
 
-              {/* SUCCESS MESSAGE */}
+   
               {submitted && (
                 <div className="bg-emerald-600 text-white px-4 py-3 rounded-lg">
                   ✓ Thank you! Your message has been sent successfully.

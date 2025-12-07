@@ -87,7 +87,7 @@ export default function Categories() {
               hover:shadow-xl hover:bg-green-50
             "
           >
-            {/* TITLE */}
+  
             <h3
               className="
                 text-lg md:text-xl font-semibold mb-4
@@ -98,7 +98,7 @@ export default function Categories() {
               {cat.title}
             </h3>
 
-            {/* ITEMS */}
+     
             <div className="mb-6 space-y-2">
               {cat.items.map((item, i) => (
                 <div
@@ -115,7 +115,7 @@ export default function Categories() {
               ))}
             </div>
 
-            {/* IMAGE */}
+          
             <div className="flex justify-center mb-4">
               <div
                 className="
@@ -136,7 +136,7 @@ export default function Categories() {
               </div>
             </div>
 
-            {/* VIEW ALL */}
+       
             <span
               className="
                 text-green-400 font-medium text-sm md:text-base 

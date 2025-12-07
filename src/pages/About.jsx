@@ -59,7 +59,7 @@ export default function About() {
             />
           </div>
 
-          {/* Text - Desktop reorder */}
+   
           <div
             className="w-full lg:order-2"
             style={{
@@ -147,7 +147,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      
       <section className="w-full px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-24 bg-green-600 text-white">
         <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center max-w-7xl lg:mx-auto">
           <div className="text-white">
