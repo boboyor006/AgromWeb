@@ -7,6 +7,7 @@ import Logins from "./pages/Register/Login"
 import Footer from "./pages/Footer"
 import About from './pages/About'
 import ContactPage from './pages/Contac'
+import Blog from './Components/Blog'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/register' element={<Registrasion />} />
         <Route path='/about' element={<About/>} />
         <Route path='/contac' element={<ContactPage/>} />
+        <Route path='/blog' element={<Blog/>}/>
       </Routes>
       
       <Footer />

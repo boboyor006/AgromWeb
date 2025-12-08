@@ -124,7 +124,7 @@ export default function Home() {
                     href="tel:+998933750515"
                     className="text-[rgb(0,110,51)] font-bold text-xs sm:text-sm transition-all duration-300 hover:translate-x-1 inline-block"
                   >
-                    +998 93 375 05 15
+                    +998 90 123 45 67
                   </a>
                 </div>
               </div>

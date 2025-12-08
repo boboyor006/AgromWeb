@@ -32,13 +32,13 @@ const Navbar = () => {
           </div>
           <div className="flex flex-wrap justify-center items-center gap-5">
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-100">
-              <i data-feather="info"></i> <Link to="/about"><span>About us</span></Link>
+              <i data-feather="info"></i> <Link to="/about"><span><b>About us</b></span></Link>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-100">
-              <i data-feather="help-circle"></i> <span><Link to="/contac">Contact us</Link></span>
+              <i data-feather="help-circle"></i> <span><Link to="/contac"><b>Contact us</b></Link></span>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-100">
-              <i data-feather="calendar"></i> <span>Blog</span>
+              <i data-feather="calendar"></i> <span><Link to="/blog"><b>Blog</b></Link></span>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-100">
               <i data-feather="map-pin"></i> <span>AGROM Locator</span>
