@@ -1,6 +1,9 @@
 import React from "react";
 import img1 from "../img/compents/img1.svg"
 import img2 from "../img/compents/img2.svg"
+import img3 from "../img/compents/img3.svg"
+import img4 from "../img/compents/img4.svg"
+
 
 
 
@@ -99,7 +102,7 @@ export default function Blog() {
 
                 {/* News 1 */}
                 <div className="flex gap-3">
-                  <img src="/sustainable-shopping.png" className="w-16 h-16 rounded object-cover" />
+                  <img src={img3} className="w-16 h-16 rounded object-cover" />
                   <div className="flex-1">
                     <h5 className="text-sm font-bold text-foreground leading-tight">
                       Going Green Leaf: Tips for Sustainable Shopping
@@ -109,7 +112,7 @@ export default function Blog() {
 
                 {/* News 2 */}
                 <div className="flex gap-3">
-                  <img src="/gluten-free-cooking.jpg" className="w-16 h-16 rounded object-cover" />
+                  <img src={img1} className="w-16 h-16 rounded object-cover" />
                   <div className="flex-1">
                     <h5 className="text-sm font-bold text-foreground leading-tight">
                       Tasty Gluten Alternatives: Our Gluten-free Selections
@@ -119,7 +122,7 @@ export default function Blog() {
 
                 {/* News 3 */}
                 <div className="flex gap-3">
-                  <img src="/fresh-vegetables-farming.jpg" className="w-16 h-16 rounded object-cover" />
+                  <img src={img2} className="w-16 h-16 rounded object-cover" />
                   <div className="flex-1">
                     <h5 className="text-sm font-bold text-foreground leading-tight">
                       Fresher Picks of the Week: Seasonal Fruits & Vegetables
@@ -129,7 +132,7 @@ export default function Blog() {
 
                 {/* News 4 */}
                 <div className="flex gap-3">
-                  <img src="/family-cooking-kitchen.jpg" className="w-16 h-16 rounded object-cover" />
+                  <img src={img4} className="w-16 h-16 rounded object-cover" />
                   <div className="flex-1">
                     <h5 className="text-sm font-bold text-foreground leading-tight">
                       Family-Friendly Cooking: Quick Nutritious Meals
