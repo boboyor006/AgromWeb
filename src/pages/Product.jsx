@@ -94,7 +94,7 @@ export default function DealOfTheMonth() {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
+                      className="object-cover w-[200px] h-full transition-transform ml-[100px] duration-300 hover:scale-110"
                     />
                   </div>
 

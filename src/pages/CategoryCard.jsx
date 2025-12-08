@@ -1,8 +1,17 @@
 "use client";
 
 import React from "react";
-import Fasil from "../img/Product/3.svg"
+import Fasil from "../img/Product/3.svg";
+import  Vegetabless from "../img/Product/Veg.svg";
+import Fresh from "../img/Product/Fresh.svg";
+import Tarvuz from "../img/Product/Tarvu.svg";
+import Un from "../img/Product/Un.svg";
+import Herbs from "../img/Product/Herbs.svg"
+import Nuts from "../img/Product/Nuts.svg"
 
+
+
+ 
 export default function Categories() {
   const categories = [
     {
@@ -13,7 +22,7 @@ export default function Categories() {
         { name: "Cabbages", count: 17 },
         { name: "Carrots", count: 17 },
       ],
-      image: Fasil,
+      image: Vegetabless,
     },
     {
       id: "2",
@@ -23,7 +32,7 @@ export default function Categories() {
         { name: "Pears", count: 17 },
         { name: "Grapes", count: 17 },
       ],
-      image:Fasil,
+      image:Fresh,
     },
     {
       id: "3",
@@ -33,7 +42,7 @@ export default function Categories() {
         { name: "Melons", count: 17 },
         { name: "Pumpkins", count: 17 },
       ],
-      image: Fasil,
+      image: Tarvuz,
     },
     {
       id: "4",
@@ -43,7 +52,7 @@ export default function Categories() {
         { name: "Barley", count: 17 },
         { name: "Rice", count: 17 },
       ],
-      image:Fasil,
+      image: Un,
     },
     {
       id: "5",
@@ -53,7 +62,7 @@ export default function Categories() {
         { name: "Dill", count: 17 },
         { name: "Mint", count: 17 },
       ],
-      image: Fasil,
+      image: Herbs,
     },
     {
       id: "6",
@@ -63,7 +72,7 @@ export default function Categories() {
         { name: "Almond", count: 17 },
         { name: "Pistachio", count: 17 },
       ],
-      image: Fasil,
+      image: Nuts,
     },
   ];
 
