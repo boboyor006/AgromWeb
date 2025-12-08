@@ -1,20 +1,29 @@
 import React from 'react';
 import Images from "../img/Product/4.svg"
 import BgImg from "../img/Product/bg.svg"
+import Veg from "../img/Product/Veg.svg"
+import A3 from "../img/Product/3.svg"
+import Tarvuz from "../img/Product/Tarvu.svg"
+import A1 from "../img/Product/1.svg"
+import Nuts from "../img/Product/Nuts.svg"
+
+
+
+
 
 const EditorsPick = () => {
     
   const products = [
     { name: "Cabbage",
          price: 5.00,
-          rating: 5, 
-          imge:Images 
+          rating: 3, 
+          imge:Veg 
     },
 
     { name: "Bell Pepper", 
         price: 5.49, 
         rating: 4.5, 
-        imge:Images 
+        imge:A3 
     },
 
     { name: "Carrot", 
@@ -25,17 +34,17 @@ const EditorsPick = () => {
     { name: "Watermelon", 
         price: 20.00, 
         rating: 5, 
-        imge:Images 
+        imge:Tarvuz 
     },
     { name: "Mashrooms", 
         price: 15.00, 
         rating: 5, 
-        imge:Images 
+        imge:A1 
     },
     { name: "Walnut", 
         price: 25.00, 
         rating: 5, 
-        imge:Images  
+        imge:Nuts  
     },
   ];
 

@@ -1,17 +1,21 @@
 import { useState, useEffect, useRef } from 'react'
 import { ChevronLeft, ChevronRight, ShoppingCart } from 'lucide-react'
 import Images from "../img/Product/4.svg"
-
+import Pamidor from "../img/Carusel/1.svg"
+import A2 from "../img/Carusel/2.svg"
+import A3 from "../img/Carusel/3.svg"
+import A4 from "../img/Carusel/4.svg"
+import A5 from "../img/Carusel/5.svg"
 
 
 
 const products = [
-  { id: 1, name: 'Mushrooms', image: Images, rating: 5, price: 15.0 },
+  { id: 1, name: 'Tomato', image: Pamidor, rating: 5, price: 15.0 },
   { id: 2, name: 'Cabbage', image: Images, rating: 5, price: 5.0 },
-  { id: 3, name: 'Bell Pepper', image: Images, rating: 5, price: 5.49 },
-  { id: 4, name: 'Carrot', image: Images, rating: 5, price: 3.99 },
-  { id: 5, name: 'Tomato', image: Images, rating: 5, price: 4.99 },
-  { id: 6, name: 'Lettuce', image: Images, rating: 5, price: 3.49 },
+  { id: 3, name: 'Peach', image: A2, rating: 5, price: 5.49 },
+  { id: 4, name: 'Dried Apricot', image: A3, rating: 5, price: 3.99 },
+  { id: 5, name: 'Pomegranate', image: A4, rating: 5, price: 4.99 },
+  { id: 6, name: 'Grape', image: A5, rating: 5, price: 3.49 },
 ]
 
 export default function ProductCarousel() {
